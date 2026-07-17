@@ -1,6 +1,6 @@
-# Shadcn Advanced Date Picker
+# Shadcn Modern Date Picker
 
-A beautifully designed, advanced date picker component built on top of [shadcn/ui](https://ui.shadcn.com/) and [react-day-picker](https://react-day-picker.js.org/) v9.
+A beautifully designed, modern date picker component built on top of [shadcn/ui](https://ui.shadcn.com/) and [react-day-picker](https://react-day-picker.js.org/) v9.
 
 Unlike the default `react-day-picker` dropdowns which rely on native HTML `<select>` elements, this component introduces a seamless, inline view-switching architecture. Users can rapidly navigate through years and months via dedicated grid views, providing an experience similar to native iOS/Android date pickers—all without leaving the context of the popover.
 
@@ -25,7 +25,7 @@ npx shadcn@latest add https://shadcn-modern-date-picker.vercel.app/r/date-picker
 You can instantly install this component by pasting the following prompt into your AI assistant:
 
 ```text
-Download the advanced calendar component from:
+Download the modern calendar component from:
 https://raw.githubusercontent.com/sunderlldev/shadcn-modern-date-picker/main/src/components/ui/calendar.tsx
 and place it in the components/ui folder.
 

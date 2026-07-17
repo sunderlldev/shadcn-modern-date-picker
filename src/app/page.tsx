@@ -10,10 +10,10 @@ export default function Home() {
     <div className="container mx-auto px-4 sm:px-6 md:px-8 py-24 max-w-4xl flex flex-col text-left">
       <div className="text-center mb-16">
         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
-          Advanced Date Picker
+          Modern Date Picker
         </h1>
-        <p className="text-xl text-muted-foreground mx-auto max-w-2xl">
-          A beautifully designed, advanced date picker component built on top of
+        <p className="text-lg text-muted-foreground mx-auto max-w-2xl">
+          A beautifully designed, modern date picker component built on top of
           shadcn/ui and react-day-picker v9. Replaces clumsy native dropdowns
           with fluid UI state transitions.
         </p>
@@ -68,7 +68,7 @@ Ensure date-fns and lucide-react are installed.`}
           </p>
           <CodeBlock code="npx shadcn-ui@latest add button popover" />
           <p className="text-muted-foreground mt-6 mb-4">
-            3. Download the advanced calendar component:
+            3. Download the modern calendar component:
           </p>
           <CodeBlock code="curl -o components/ui/calendar.tsx https://raw.githubusercontent.com/sunderlldev/shadcn-modern-date-picker/main/src/components/ui/calendar.tsx" />
         </section>

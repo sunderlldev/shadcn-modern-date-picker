@@ -7,7 +7,7 @@ import { Terminal } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 sm:px-6 md:px-8 py-24 max-w-4xl flex flex-col text-left">
+    <div className="container mx-auto px-4 sm:px-6 md:px-8 py-24 max-w-4xl flex flex-col text-left">
       <div className="text-center mb-16">
         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
           Advanced Date Picker
@@ -73,6 +73,6 @@ Ensure date-fns and lucide-react are installed.`}
           <CodeBlock code="curl -o components/ui/calendar.tsx https://raw.githubusercontent.com/sunderlldev/shadcn-modern-date-picker/main/src/components/ui/calendar.tsx" />
         </section>
       </div>
-    </main>
+    </div>
   );
 }

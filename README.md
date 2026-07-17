@@ -106,4 +106,6 @@ This component solves the issue by breaking out of the DayPicker DOM entirely wh
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Made by Leonardo Ramos 👋
+<p align="center">
+  Made by Juan Blas 👋
+</p>

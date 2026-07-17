@@ -102,6 +102,8 @@ If you've tried overriding `components={{ MonthCaption: ... }}` in `react-day-pi
 
 This component solves the issue by breaking out of the DayPicker DOM entirely when rendering the Month and Year views. By conditionally rendering standalone `MonthsView` and `YearsView` wrappers *outside* the DayPicker instance, we maintain perfect event isolation while preserving the exact layout constraints and class names of the original Shadcn configuration.
 
-## 🤝 Acknowledgments
+## 🤝 Contributing
 
-Inspired by modern UI paradigms and the excellent community work around Shadcn extensions (like `flixlix/shadcn-date-picker`).
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Made by Leonardo Ramos 👋

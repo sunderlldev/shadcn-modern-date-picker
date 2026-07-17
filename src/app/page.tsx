@@ -1,65 +1,78 @@
-import Image from "next/image";
+"use client";
+
+import { DatePickerDemo } from "@/components/date-picker-demo";
+import { CodeTabs } from "@/components/code-tabs";
+import { CodeBlock } from "@/components/code-block";
+import { Terminal } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="container mx-auto px-4 sm:px-6 md:px-8 py-24 max-w-4xl flex flex-col text-left">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
+          Advanced Date Picker
+        </h1>
+        <p className="text-xl text-muted-foreground mx-auto max-w-2xl">
+          A beautifully designed, advanced date picker component built on top of
+          shadcn/ui and react-day-picker v9. Replaces clumsy native dropdowns
+          with fluid UI state transitions.
+        </p>
+      </div>
+
+      <div className="flex justify-center items-center mb-24 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100/50 dark:bg-zinc-900/50 py-32 px-8 min-h-70 shadow-sm">
+        <DatePickerDemo />
+      </div>
+
+      <div className="space-y-12">
+        <section>
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <Terminal className="h-6 w-6" />
+            Installation
+          </h2>
+          <p className="text-muted-foreground mb-4">
+            You can add this component directly to your project using the shadcn
+            CLI. This will automatically install all required dependencies and
+            the base shadcn components.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <CodeTabs />
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <Terminal className="h-6 w-6" />
+            Install via Prompt (Cursor / Copilot)
+          </h2>
+          <p className="text-muted-foreground mb-4">
+            Instantly add this to your project by asking your AI assistant:
+          </p>
+          <CodeBlock
+            code={`Download the advanced calendar component from:
+https://raw.githubusercontent.com/sunderlldev/date-picker-2026/main/src/components/ui/calendar.tsx
+and place it in the components/ui folder.
+
+Ensure date-fns and lucide-react are installed.`}
+          />
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <Terminal className="h-6 w-6" />
+            Manual Installation
+          </h2>
+          <p className="text-muted-foreground mb-4">
+            1. Make sure you have the base dependencies installed:
+          </p>
+          <CodeBlock code="npm install react-day-picker lucide-react date-fns" />
+          <p className="text-muted-foreground mt-6 mb-4">
+            2. Add the base Shadcn UI components:
+          </p>
+          <CodeBlock code="npx shadcn-ui@latest add button popover" />
+          <p className="text-muted-foreground mt-6 mb-4">
+            3. Download the advanced calendar component:
+          </p>
+          <CodeBlock code="curl -o components/ui/calendar.tsx https://raw.githubusercontent.com/sunderlldev/date-picker-2026/main/src/components/ui/calendar.tsx" />
+        </section>
+      </div>
+    </main>
   );
 }

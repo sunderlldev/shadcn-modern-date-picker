@@ -10,9 +10,46 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Advanced Date Picker",
+  title: "Shadcn Modern Date Picker",
   description:
-    "A beautifully designed, advanced date picker component built on top of shadcn/ui and react-day-picker v9.",
+    "A beautifully designed, advanced date picker component built on top of shadcn/ui and react-day-picker v9. Replaces clumsy native dropdowns with fluid UI state transitions.",
+  keywords: [
+    "shadcn",
+    "date picker",
+    "react",
+    "next.js",
+    "ui component",
+    "tailwind css",
+    "calendar",
+    "react-day-picker",
+  ],
+  authors: [{ name: "sunderlldev", url: "https://sunderll.dev" }],
+  creator: "sunderlldev",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://shadcn-modern-date-picker.vercel.app",
+    title: "Shadcn Modern Date Picker",
+    description:
+      "A beautifully designed, advanced date picker component built on top of shadcn/ui and react-day-picker v9.",
+    siteName: "Shadcn Modern Date Picker",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Shadcn Modern Date Picker",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shadcn Modern Date Picker",
+    description:
+      "A beautifully designed, advanced date picker component built on top of shadcn/ui and react-day-picker v9.",
+    images: ["/og-image.png"],
+    creator: "@sunderlldev",
+  },
 };
 
 export default function RootLayout({

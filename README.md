@@ -88,7 +88,7 @@ export function DatePickerDemo() {
           mode="single"
           selected={date}
           onSelect={setDate}
-          captionLayout="dropdown" // ✨ Activates the advanced grid views!
+          captionLayout="dropdown"
         />
       </PopoverContent>
     </Popover>

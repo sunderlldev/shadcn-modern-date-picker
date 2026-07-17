@@ -246,7 +246,6 @@ function Calendar({
     [month],
   );
 
-  // ---- Dropdown mode: render months/years views ----
   if (isDropdown && view === "months") {
     return (
       <div data-slot="calendar" className={cn("bg-background", className)}>

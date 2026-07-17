@@ -104,7 +104,7 @@ This component solves the issue by breaking out of the DayPicker DOM entirely wh
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome :) Please feel free to submit a Pull Request.
 
 <p align="center">
   Made by Juan Blas 👋

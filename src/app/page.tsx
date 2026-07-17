@@ -70,7 +70,7 @@ Ensure date-fns and lucide-react are installed.`}
           <p className="text-muted-foreground mt-6 mb-4">
             3. Download the advanced calendar component:
           </p>
-          <CodeBlock code="curl -o components/ui/calendar.tsx https://raw.githubusercontent.com/sunderlldev/date-picker-2026/main/src/components/ui/calendar.tsx" />
+          <CodeBlock code="curl -o components/ui/calendar.tsx https://raw.githubusercontent.com/sunderlldev/shadcn-modern-date-picker/main/src/components/ui/calendar.tsx" />
         </section>
       </div>
     </main>

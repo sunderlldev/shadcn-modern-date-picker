@@ -39,7 +39,7 @@ export default function RootLayout({
                 <ThemeToggle />
                 <GitHubStarsButton
                   username="sunderlldev"
-                  repo="date-picker-2026"
+                  repo="shadcn-modern-date-picker"
                 />
               </div>
             </div>

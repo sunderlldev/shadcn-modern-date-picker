@@ -11,10 +11,10 @@ export function CodeTabs() {
   const [activeTab, setActiveTab] = useState("pnpm");
 
   const commands = {
-    pnpm: "pnpm dlx shadcn@latest add \\\n  https://date-picker-2026.vercel.app/r/date-picker.json",
-    npm: "npx shadcn@latest add \\\n  https://date-picker-2026.vercel.app/r/date-picker.json",
-    yarn: "npx shadcn@latest add \\\n  https://date-picker-2026.vercel.app/r/date-picker.json",
-    bun: "bunx --bun shadcn@latest add \\\n  https://date-picker-2026.vercel.app/r/date-picker.json",
+    pnpm: "pnpm dlx shadcn@latest add \\\n  https://shadcn-modern-date-picker.vercel.app/r/date-picker.json",
+    npm: "npx shadcn@latest add \\\n  https://shadcn-modern-date-picker.vercel.app/r/date-picker.json",
+    yarn: "npx shadcn@latest add \\\n  https://shadcn-modern-date-picker.vercel.app/r/date-picker.json",
+    bun: "bunx --bun shadcn@latest add \\\n  https://shadcn-modern-date-picker.vercel.app/r/date-picker.json",
   };
 
   const copyToClipboard = () => {

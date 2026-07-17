@@ -18,7 +18,7 @@ Unlike the default `react-day-picker` dropdowns which rely on native HTML `<sele
 ### 1. Install via Shadcn CLI (Recommended)
 
 ```bash
-npx shadcn@latest add https://date-picker-2026.vercel.app/r/date-picker.json
+npx shadcn@latest add https://shadcn-modern-date-picker.vercel.app/r/date-picker.json
 ```
 
 ### 2. Install via Prompt (Cursor / v0 / Copilot)
@@ -26,7 +26,7 @@ You can instantly install this component by pasting the following prompt into yo
 
 ```text
 Download the advanced calendar component from:
-https://raw.githubusercontent.com/sunderlldev/date-picker-2026/main/src/components/ui/calendar.tsx
+https://raw.githubusercontent.com/sunderlldev/shadcn-modern-date-picker/main/src/components/ui/calendar.tsx
 and place it in the components/ui folder.
 
 Ensure date-fns and lucide-react are installed.
